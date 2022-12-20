@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IS PRIME</title>
+</head>
+<body>
+    <script>
+        function isPrime(num) {
+            if (num <= 0 || num >= 10000)   alert("Reload this page and Enter the number between 0 to 10.000");
+            else {
+              let cnt = 0;
+              for (let i = 1; i <= num; i++) {
+                if (num % i == 0) cnt += 1;
+              }
+              if (cnt === 2) alert(num + " is prime");
+              else alert(num + " is not prime");
+            }        }
+        let num = Number(prompt("Enter the number between 0 to 10.000"));
+        isPrime(num);
+    </script>
+</body>
+</html>
